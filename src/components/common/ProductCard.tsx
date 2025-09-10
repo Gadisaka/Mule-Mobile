@@ -152,19 +152,6 @@ const ProductCard: React.FC<ProductCardProps> = ({
             {product.name}
           </h3>
 
-          {/* Rating */}
-          <div className="flex items-center gap-1 mb-2">
-            {[...Array(5)].map((_, i) => (
-              <Star
-                key={i}
-                className={`h-3 w-3 ${
-                  i < 4 ? "fill-accent text-accent" : "text-muted-foreground"
-                }`}
-              />
-            ))}
-            <span className="text-sm text-muted-foreground ml-1">(4.5)</span>
-          </div>
-
           {/* Price */}
           <div className="flex items-center gap-2 mb-3">
             <span className="text-lg font-bold text-primary">
